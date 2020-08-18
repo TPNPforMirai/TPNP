@@ -5,7 +5,7 @@ Fixed Mirai compatibility, and will merge the latest code, also keep open-source
 ## Running
 
 ```
-hypercorn run:app -b 0.0.0.0:8080
+hypercorn run:app -b 0.0.0.0:65480
 ```
 
 ## Usage
