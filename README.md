@@ -5,6 +5,7 @@ Fixed Mirai compatibility, and will merge the latest code, also keep open-source
 ## Running
 
 ```
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 hypercorn run:app -b 0.0.0.0:65480
 ```
 
