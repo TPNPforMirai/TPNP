@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 from io import BytesIO
-
+import unicodedata
 import feedparser
 import json
 import codecs
@@ -332,12 +332,14 @@ async def checkstr(rss_str:str,img_proxy:bool,translation:bool)->str:
     # Baidu Translator API
 #   text = ''
 #   if translation:
-        # rss_str_tl = re.sub(r'\n', ' ', rss_str_tl)
+#       rss_str_tl = re.sub(r'\n', '百度翻译 ', rss_str_tl)
+#       rss_str_tl = unicodedata.normalize('NFC', rss_str_tl)
 #       try:
 #           text=emoji.demojize(rss_str_tl)
 #           text = re.sub(r':[A-Za-z_]*:', ' ', text)
 #           text = '\n翻译(BaiduAPI)：\n' + rss_trans.baidu_translate(re.escape(text))
 #           text = re.sub(r'\\', '', text)
+#           text = re.sub(r'百度翻译', '\n', text)
 #       except Exception as e:
 #           text = '\n翻译失败！'+str(e)+'\n'
 #   print()
