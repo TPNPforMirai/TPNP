@@ -14,7 +14,7 @@ Change these values:
 
 Note: To use BaiduTranslate API, please go to TPNP/include/plugins/RSSHub/rsshub.py , remove the original translate block and replace them with the codes below.
 
-Run `java -jar ./Mirai_cqHttp/cqhttp-mirai-0.2.2.4-embedded-all.jar` first in one screen process, and then go to ./TPNP folder and run `hypercorn run:app -b 0.0.0.0:8080` in another screen process.
+Run `java -jar ./Mirai_cqHttp/cqhttp-mirai-0.2.2.4-embedded-all.jar` first in one screen process, and then go to ./TPNP folder and run `hypercorn run:app -b 0.0.0.0:58080` in another screen process.
 
 Note: You can set properties in Mirai_cqHttp/config.txt to enable autologin.
 
