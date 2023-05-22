@@ -2,7 +2,7 @@ googletrans==2.4.0
 httpx==0.12.1
 emoji==0.5.4
 nonebot==1.5.0
-requests==2.21.0
+requests==2.31.0
 feedparser==5.2.1
 apscheduler==3.6.3
 Pillow==7.2.0
